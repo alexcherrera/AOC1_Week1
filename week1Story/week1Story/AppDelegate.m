@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Foundation/Foundation.h>
 
 @implementation AppDelegate
 
@@ -23,7 +24,19 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 	
-	
+	//Two friends declared in strings
+		NSString * person1 = "Tim";
+		NSString * person2 = "Albert";
+	//Boat prices but the first two are integers
+		int boat1 = 300000;
+		int boat3 = 450000;
+	//Boat2 is a float which will be used for casting from float to int
+		float boat2 = 400000.00f;
+	//Total price of all boats and uses casting
+		int totalAllBoats = boat1 + (int)boat2 + boat3;
+		
+		NSLog(@"%d", totalAllBoats);
+		int hello = 0;
     return YES;
 }
 
